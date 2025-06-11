@@ -1,0 +1,43 @@
+{
+  "name": "mcp-everything-server",
+  "version": "0.1.0",
+  "description": "MCP Everything Server with HTTP transport for GKE deployment",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-everything": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js http",
+    "dev": "ts-node-esm src/index.ts",
+    "test": "echo 'No tests specified'",
+    "docker:build": "docker build -t mcp-everything .",
+    "docker:run": "docker run -p 3000:3000 --name mcp-server mcp-everything"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "server",
+    "tools",
+    "gke",
+    "kubernetes"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.5.0",
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/express": "^4.17.21",
+    "@types/cors": "^2.8.17",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
