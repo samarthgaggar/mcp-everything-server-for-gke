@@ -1,5 +1,5 @@
 
-# MCP Everything Server for GKE
+# MCP Everything Server for GKE 
 
 This project customizes Docker images to support running the MCP Everything Server for HTTP transport, specifically tailored for deployment on a Google Kubernetes Engine (GKE) cluster as a remote server.
 
