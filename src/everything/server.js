@@ -110,7 +110,7 @@ function handleToolCall(name, args) {
   }
 }
 
-// Handle MCP requests
+// handle mcp requests
 function handleMCPRequest(request) {
   const { method, params, id } = request;
   
