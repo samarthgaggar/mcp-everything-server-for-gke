@@ -22,7 +22,7 @@ function generateSessionId() {
   return Math.random().toString(36).substring(2) + Date.now().toString(36);
 }
 
-// MCP Server capabilities
+// mcp server specs
 const serverInfo = {
   name: 'mcp-everything-server',
   version: '1.0.0'
